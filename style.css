@@ -9,8 +9,7 @@ body {
 
 #page {
     display: flex;
-    justify-content: space-between;
-    gap: 10px
+    gap: 10px;
 }
 
 #left-container {
@@ -18,8 +17,6 @@ body {
     order: 1;
     background-color: #eee;
     width: 15%;
-    left: 0px;
-    top: 0px;
     /* position: absolute; */
     height:100%;
     padding:10px;
@@ -29,8 +26,6 @@ body {
     order: 3;
     background-color: #eee;
     width: 15%;
-    right:0px;
-    top: 0px;
     /* position: absolute; */
     height: 100%;
     padding: 10px;
@@ -115,9 +110,8 @@ body {
   background: rgb(241,253,255);
   width: 3%;
   height: 20%;
-  /* position: relative;
-  top: 55%;
-  left:25px; */
+  position: relative;
+  left:25px;
   border-radius: 1rem;
 }
 
@@ -125,8 +119,7 @@ body {
   background: rgb(241,253,255);
   width: 3%;
   height: 5%;
-  /* position: relative;
-  top: 25%;
-  left:25px; */
+  position: relative;
+  left:25px;
   border-radius: 1rem;
 }
