@@ -62,14 +62,32 @@ body {
 }
 
 .jar-walls {
-	grid-column: 1 / 11;
+	grid-column: 1 / -1;
 	grid-row: 2 / 10;
 	background: #d1e1df;
 	border-radius: 1rem;
 	opacity: 0.5;
 	z-index: 1;
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: repeat(10, 1fr);
 }
 
+.jar-glossy-short {
+	grid-column: 2 / 3;
+		grid-row: 5 /6;
+	background: rgb(241, 253, 255);
+	border-radius: 1rem;
+	height: 60%
+}
+
+.jar-glossy-long {
+	grid-column: 2 / 3;
+	grid-row: 7 /9;
+	background: rgb(241, 253, 255);
+	border-radius: 1rem;
+	height: 130%;
+}
 
 .jar-bottom {
 	height: 20%;
@@ -92,22 +110,3 @@ body {
   z-index: -1;
 }
 
-.jar-glossy-long {
-  background: rgb(241,253,255);
-  width: 3%;
-  height: 20%;
-  position: relative;
-  top: 55%;
-  left:25px;
-  border-radius: 1rem;
-}
-
-.jar-glossy-short {
-  background: rgb(241,253,255);
-  width: 3%;
-  height: 5%;
-  position: relative;
-  top: 25%;
-  left:25px;
-  border-radius: 1rem;
-}
